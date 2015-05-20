@@ -1,0 +1,97 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Datacuber</title>
+   
+   <script type="text/javascript" language="javascript">
+   function clear_textbox()
+{
+if (document.text_form.u_input.value == " Password ")
+document.text_form.u_input.value = "";
+} 
+   function enter_password()
+{
+if (document.text_form.u_input.value == "")
+document.text_form.u_input.value = " Password ";
+}
+   function clear_textbox2()
+{
+if (document.text_form.p_input.value == " Login ")
+document.text_form.p_input.value = "";
+}
+   function enter_login()
+{
+if (document.text_form.p_input.value == "")
+document.text_form.p_input.value = " Login ";
+}
+
+</script>
+          
+    </script>    
+        
+ 
+
+</head>
+<body onLoad="document.form01.login.focus()">
+
+		<div id="DivWrapper">
+
+		<div id="DivHeader">
+            <br />
+            <center><h1>jakden</h1></h1></center>
+        </div>                
+		
+        <div id="DivTopMenu">
+			   	<form id="form01" name="text_form" method="post" 
+			action="form1.htm">
+
+			<input id="login" name="p_input" onFocus="clear_textbox2()" value=" Login " onblur="enter_login()" >
+
+			<input id="password" name="u_input" onFocus="clear_textbox()" value=" Password " onblur="enter_password()" >
+			</form>
+		</div>
+		
+		<div id="DivContent">
+		
+	<div id="DivRight">
+		            <ul id="SideMenu">
+                <li><a href="default.html"title="Home">Home</a></li>
+                <li><a href="search.html"title="windowtimer">Search</a></li>
+                <li><a href="screensaver.html"title="screensaver">How To</a></li>
+                <li><a href="bannerads.html"title="bannerads">FAQ</a></li>
+                <li><a href="instructions.html"title="instructions">Search</a></li>
+            </ul>
+	<script language="JavaScript" type="text/javascript">
+function changeFontSize(inc)
+{
+  var p = document.getElementsByTagName('p');
+  for(n=0; n<p.length; n++) {
+    if(p[n].style.fontSize) {
+       var size = parseInt(p[n].style.fontSize.replace("px", ""));
+    } else {
+       var size = 12;
+    }
+    p[n].style.fontSize = size+inc + 'px';
+   }
+}
+</script>
+		   <a href="javascript:changeFontSize(1)">Increase Font Size</a> 
+<a href="javascript:changeFontSize(-1)">Decrease Font Size</a>
+		<div><p>ooooo</p></div>
+</script>        
+       	</div>             
+		<div id="DivFooter">
+            <center><ul>
+
+                <li><a href="default.html"title="Home">Home</a></li> |
+                <li><a href="default.html"title="Home">Contact Us</a></li> |
+                <li><a href="default.html"title="Home">Login</a></li>
+
+            </ul></center>       
+        </div>
+	</body>
+</html>

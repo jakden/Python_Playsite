@@ -1,0 +1,28 @@
+
+
+<form>
+<br>
+Search:
+<input type="text" placeholder="enter card here" style="text-align: center" name="cardsearch">
+<br>
+</form>
+
+	<table>
+		<tr>
+		<th>Card Name</th>
+		<th>Mana Cost</th>
+		</tr>
+{% if card_list %}
+    {% for card in card_list %}
+		<tr>
+		<td><a href="/hearthstone/{{ card.id }}/">{{ card.card }}</a></td>
+		<td><a href="/hearthstone/{{ card.id }}/"></a>{{ card.mana }}</td>
+        	</tr>
+{% endfor %}
+	</table>
+
+
+
+{% else %}
+    <p>No cards are avaiable</p>
+{% endif %}

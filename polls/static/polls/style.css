@@ -1,0 +1,12 @@
+li a {
+    color: green;
+    font-weight: bold; 
+    font-family: Trebuchet MS;
+}
+
+body {
+    background: purple url("images/background.png") no-repeat right bottom;
+}
+
+
+
