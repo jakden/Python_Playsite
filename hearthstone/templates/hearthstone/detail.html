@@ -1,4 +1,6 @@
 <h1>{{ card.card }}</h1>
+<p>{{  mana.mana }}</p>
+<p>{{ card_class.card_class }}</p>
 <ul>
 {% for choice in card.choice_set.all %}
     <li>{{ choice.choice_text }}</li>

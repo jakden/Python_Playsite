@@ -1,9 +1,13 @@
 
 
+
+
 <form>
 <br>
 Search:
-<input type="text" placeholder="enter card here" style="text-align: center" name="cardsearch">
+<input type="search" placeholder="enter card here" style="text-align: center"  name="{{ i.parameter_name }}" value="{{ i.current_value|default_if_none:"" }}"/>
+
+
 <br>
 </form>
 
